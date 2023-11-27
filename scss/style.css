@@ -37,15 +37,16 @@ body .card_wrapper {
 }
 body .card_wrapper .card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: left;
+  justify-content: space-between;
   width: 19.438rem;
   height: 13.875rem;
   border-radius: 8px;
   filter: drop-shadow(0px 15px 15px rgba(131, 166, 210, 0.5019607843));
   background-color: #ffffff;
-  padding: 2rem;
   margin-bottom: 1.563rem;
+  padding: 2rem;
 }
 body .card_wrapper .card:nth-child(3n-1) {
   border-top: 5px solid #44d3d2;
@@ -59,16 +60,26 @@ body .card_wrapper .card:nth-child(3n-3) {
 body .card_wrapper .card:nth-child(3n-3) {
   border-top: 5px solid #549ef2;
 }
-body .card_wrapper .card h3 {
+body .card_wrapper .card .text {
+  width: 100%;
+  text-align: left;
+}
+body .card_wrapper .card .text h3 {
   font-size: 20px;
 }
-body .card_wrapper .card p {
+body .card_wrapper .card .text p {
   font-size: 13px;
   line-height: 22px;
   color: #4d4f62;
 }
-body .card_wrapper .card img {
+body .card_wrapper .card .text img {
   width: 3.5rem;
   height: 3.5rem;
   float: right;
+}
+body .card_wrapper .card .image {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
 }/*# sourceMappingURL=style.css.map */
