@@ -1,4 +1,4 @@
-@use "./maintext";
-@use "./utils/vriables";
-@use "./utils/maps";
-@use "./utils/mixins";
+@import "variables/color";
+@import "utils/maps";
+@import "utils/mixins";
+@import "maintext";
