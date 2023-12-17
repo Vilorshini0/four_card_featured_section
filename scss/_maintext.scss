@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,6 +15,10 @@ body {
 
     @include ultra-wide-only {
         max-width: 80%;
+        background-color: yellow;
+    }
+    @include desktop {
+        background-color: red;
     }
 
     h1 {
@@ -42,6 +45,7 @@ body {
         @include ultra-wide-only {
             font-size: 50px;
             line-height: 4rem;
+            margin-top: 8%;
         }
 
         .header_bold {
@@ -104,6 +108,10 @@ body {
             padding: 3.8rem 0 3.8rem 0;
         }
 
+        @include ultra-wide-only {
+            grid-gap: 3rem;
+        }
+
         .supervisor {
             border-top: 5px solid $turquoise;
 
@@ -160,7 +168,7 @@ body {
             }
 
             @include ultra-wide-only {
-                height: 20rem;
+                height: 27rem;
                 padding: 2.65rem 3rem;
             }
 
