@@ -15,10 +15,6 @@ body {
 
     @include ultra-wide-only {
         max-width: 80%;
-        background-color: yellow;
-    }
-    @include desktop {
-        background-color: red;
     }
 
     h1 {
