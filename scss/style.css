@@ -11,7 +11,13 @@ body {
   background-color: #F2F2F2;
   color: #4d4f62;
   font-family: "Poppins", sans-serif;
+  margin: auto;
   /* cards section wrapper*/
+}
+@media only screen and (min-width: 1980px) {
+  body {
+    max-width: 80%;
+  }
 }
 body h1 {
   text-align: center;
@@ -36,6 +42,12 @@ body h1 {
     line-height: 3rem;
   }
 }
+@media only screen and (min-width: 1980px) {
+  body h1 {
+    font-size: 50px;
+    line-height: 4rem;
+  }
+}
 body h1 .header_bold {
   font-weight: 600;
 }
@@ -46,11 +58,6 @@ body p {
   opacity: 0.502;
   line-height: 27px;
   letter-spacing: 0.9px;
-}
-@media only screen and (min-width: 1260px) {
-  body p {
-    letter-spacing: normal;
-  }
 }
 body .main_paragraph {
   width: 89%;
@@ -64,6 +71,14 @@ body .main_paragraph {
 @media only screen and (min-width: 1260px) {
   body .main_paragraph {
     width: 35%;
+    letter-spacing: normal;
+  }
+}
+@media only screen and (min-width: 1980px) {
+  body .main_paragraph {
+    width: 35%;
+    font-size: 35px;
+    line-height: 3rem;
   }
 }
 body .card_wrapper {
@@ -90,15 +105,8 @@ body .card_wrapper {
     display: grid;
     grid-template: repeat(4, 1fr)/repeat(3, 1fr);
     width: 73%;
-    grid-gap: 1rem 2rem;
+    grid-gap: 2rem;
     padding: 3.8rem 0 3.8rem 0;
-  }
-}
-@media only screen and (min-width: 1980px) {
-  body .card_wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 75%;
   }
 }
 body .card_wrapper .supervisor {
@@ -152,13 +160,13 @@ body .card_wrapper .card {
 }
 @media only screen and (min-width: 1260px) {
   body .card_wrapper .card {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     padding: 1.65rem 2rem;
   }
 }
 @media only screen and (min-width: 1980px) {
   body .card_wrapper .card {
-    height: 18rem;
+    height: 20rem;
     padding: 2.65rem 3rem;
   }
 }
@@ -177,6 +185,12 @@ body .card_wrapper .card .text h3 {
     line-height: 2.3rem;
   }
 }
+@media only screen and (min-width: 1980px) {
+  body .card_wrapper .card .text h3 {
+    font-size: 35px;
+    line-height: 3rem;
+  }
+}
 body .card_wrapper .card .text p {
   text-align: left;
   font-size: 13px;
@@ -187,6 +201,12 @@ body .card_wrapper .card .text p {
 @media only screen and (min-width: 1260px) {
   body .card_wrapper .card .text p {
     letter-spacing: 0.21px;
+  }
+}
+@media only screen and (min-width: 1980px) {
+  body .card_wrapper .card .text p {
+    font-size: 20px;
+    line-height: 3rem;
   }
 }
 body .card_wrapper .card .image {

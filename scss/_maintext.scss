@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +11,12 @@ body {
     height: 100%;
     background-color: $background;
     color: $grey;
-    font-family: $poppins;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+
+    @include ultra-wide-only {
+        max-width: 80%;
+    }
 
     h1 {
         text-align: center;
@@ -32,6 +39,11 @@ body {
             line-height: 3rem;
         }
 
+        @include ultra-wide-only {
+            font-size: 50px;
+            line-height: 4rem;
+        }
+
         .header_bold {
             font-weight: 600;
         }
@@ -44,22 +56,25 @@ body {
         opacity: 0.502;
         line-height: 27px;
         letter-spacing: 0.9px;
-        
-        @include desktop {
-            letter-spacing: normal;
-        }
     }
     
     .main_paragraph {
         width: 89%;
         margin: auto;
-        
+
         @include tablet {
             width: 40%;
         }
 
         @include desktop {
             width: 35%;
+            letter-spacing: normal;
+        }
+
+        @include ultra-wide-only {
+            width: 35%;
+            font-size: 35px;
+            line-height: 3rem;
         }
     }
 
@@ -85,14 +100,8 @@ body {
             display: grid;
             grid-template: repeat(4,1fr)/repeat(3,1fr);
             width: 73%;
-            grid-gap: 1rem 2rem;
+            grid-gap: 2rem;
             padding: 3.8rem 0 3.8rem 0;
-        }
-
-        @include ultra-wide-only {
-            display: flex;
-            flex-direction: row;
-            width: 75%;
         }
 
         .supervisor {
@@ -146,12 +155,12 @@ body {
             padding: 1.7rem;
 
             @include desktop {
-                margin-bottom: 1rem;
+                margin-bottom: 0;
                 padding: 1.65rem 2rem;
             }
 
             @include ultra-wide-only {
-                height: 18rem;
+                height: 20rem;
                 padding: 2.65rem 3rem;
             }
 
@@ -168,6 +177,11 @@ body {
                         letter-spacing: initial;
                         line-height: 2.3rem;
                     }
+
+                    @include ultra-wide-only {
+                        font-size: 35px;
+                        line-height: 3rem;
+                    }
                 }
     
                 p {
@@ -179,6 +193,11 @@ body {
 
                     @include desktop {
                         letter-spacing: 0.21px;
+                    }
+
+                    @include ultra-wide-only {
+                        font-size: 20px;
+                        line-height: 3rem;
                     }
                 }
             }
