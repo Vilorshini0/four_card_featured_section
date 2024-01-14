@@ -32,8 +32,8 @@ You should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repository URL: (https://github.com/Vilorshini0/four_card_featured_section)
+- Live Site URL: (https://my-four-card-feature-section.netlify.app/)
 
 ## My process
 
@@ -74,7 +74,7 @@ It's my first time using Grid Layout and i found it very useful, will definitly 
 
 ## Author
 
-- Website - [My four card feature section](https://my-four-card-feature-section.netlify.app/)
+- Website - [github profile](https://github.com/Vilorshini0)
 - Linkedin - [@Vilorshini Ramsamy](https://www.linkedin.com/in/vilorshiniramsamy/)
 
 

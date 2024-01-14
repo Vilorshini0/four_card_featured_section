@@ -1,4 +1,7 @@
 @import "variables/color";
+@import "variables/typography";
 @import "utils/maps";
 @import "utils/mixins";
-@import "maintext";
+@import "base/global";
+@import "components/cards";
+@import "pages/homepage";

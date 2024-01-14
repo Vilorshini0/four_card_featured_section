@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+.homepage {
+    h1 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 24px;
+        padding: 1rem 0;
+        margin-top: 5rem;
+        letter-spacing: 1.4px;
+        line-height: 2.5rem;
+
+        @include tablet {
+            font-size: 30px;
+        }
+
+        @include desktop {
+            font-size: 36px;
+            letter-spacing: 0.3px;
+            margin: 4.5rem 0 0;
+            padding: 0.8rem 0;
+            line-height: 3rem;
+        }
+
+        @include ultra-wide-only {
+            font-size: 50px;
+            line-height: 4rem;
+            margin-top: 8%;
+        }
+
+        .header_bold {
+            font-weight: 600;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.502;
+        line-height: 27px;
+        letter-spacing: 0.9px;
+    }
+    
+    .main_paragraph {
+        width: 89%;
+        margin: auto;
+
+        @include tablet {
+            width: 40%;
+        }
+
+        @include desktop {
+            width: 35%;
+            letter-spacing: normal;
+        }
+
+        @include ultra-wide-only {
+            width: 35%;
+            font-size: 35px;
+            line-height: 3rem;
+        }
+    }
+}

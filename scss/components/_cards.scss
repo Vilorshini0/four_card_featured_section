@@ -1,0 +1,145 @@
+/* cards section wrapper*/
+.card_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 82%;
+    min-width: 18rem;
+    padding: 5.2rem 0 3.8rem 0;
+    margin: auto;
+
+    @include tablet {
+        display: grid;
+        grid-template: repeat(2,1fr)/repeat(2,1fr);
+        grid-gap: 2rem;
+        padding: 3.8rem 0 3.8rem 0;
+    }
+
+    @include desktop {
+        display: grid;
+        grid-template: repeat(4,1fr)/repeat(3,1fr);
+        width: 73%;
+        grid-gap: 2rem;
+        padding: 3.8rem 0 3.8rem 0;
+    }
+
+    @include ultra-wide-only {
+        grid-gap: 3rem;
+    }
+
+    .supervisor {
+        border-top: 5px solid $secondary;
+
+        @include desktop {
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+    }
+
+    .team-builder {
+        border-top: 5px solid $primary;
+
+        @include desktop {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+    }
+
+    .karma {
+        border-top: 5px solid $yellow;
+
+        @include desktop {
+            grid-column: 2/3;
+            grid-row: 3/5;
+        }
+    }
+
+    .calculator {
+        border-top: 5px solid $quaternary;
+
+        @include desktop {
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+    }
+
+    /* Individual card styling */
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 15.5rem;
+        border-radius: 6px;
+        box-shadow:(0px 11px 11px rgba(131,166,210,0.5));
+        background-color: $white;
+        margin-bottom: 1.6rem;
+        padding: 1.7rem;
+
+        @include desktop {
+            margin-bottom: 0;
+            padding: 1.65rem 2rem;
+        }
+
+        @include ultra-wide-only {
+            height: 27rem;
+            padding: 2.65rem 3rem;
+        }
+
+        .text {
+            width: 100%;
+            text-align: left;
+
+            h3 {
+                font-size: 20px;
+                letter-spacing: 1.6px;
+                line-height: 2.2rem;
+
+                @include desktop {
+                    letter-spacing: initial;
+                    line-height: 2.3rem;
+                }
+
+                @include ultra-wide-only {
+                    font-size: 35px;
+                    line-height: 3rem;
+                }
+            }
+
+            p {
+                text-align: left;
+                font-size: 13px;
+                line-height: 24px;
+                color: $text;
+                letter-spacing: 0.7px;
+
+                @include desktop {
+                    letter-spacing: 0.21px;
+                }
+
+                @include ultra-wide-only {
+                    font-size: 20px;
+                    line-height: 3rem;
+                }
+            }
+        }
+
+        .image {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: right;
+            margin-top: 2.2rem;
+
+            @include desktop {
+                margin-top: 1.5rem;
+            }
+
+            img {
+                width: 3.8rem;
+            }
+        }
+    }
+}
